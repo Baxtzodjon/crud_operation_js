@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body onload="readAll()">
+
+    <div class="container">
+
+        <div class="first_block">
+
+            <div class="left">
+                <h1>Dashboard</h1>
+                <a href="#popup">
+                    <button>Добавить задачу</button>
+                </a>
+            </div>
+
+            <div class="right">
+                <input type="search" placeholder="Поиск по задачам">
+            </div>
+
+        </div>
+
+        <div class="task">
+            <p class="exercise">Показать задачи как:</p>
+            <p class="table_style">Таблица</p>
+            <a class="about_link" target="_blank" href="./about.html">
+                <p class="tile">Плитка</p>
+            </a>
+        </div>
+
+        <div class="table">
+
+            <p>Заголовок задачи</p>
+            <p class="task_description">Описание задачи</p>
+            <p class="date">Дата</p>
+            <p class="time">Время</p>
+            <p class="done">Выполнено</p>
+
+        </div>
+
+        <!-- <div class="line"></div> -->
+
+        <!-- <div class="create_elements">
+
+            <h4 class="h4_text">Переписать проект на Vue 3</h4>
+
+            <p class="p_text">Quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto lorem
+            </p>
+
+            <h4 class="h4_date">21.10.21</h4>
+
+            <h4 class="h4_time">14:31</h4>
+
+            <p class="p_done">Не выполнено</p>
+
+        </div> -->
+
+        <div class="lines"></div>
+
+        <div id="popup">
+            <div class="popup-content">
+                <!--   <h1>Добавить</h1>
+                
+                <form action="">
+                    <input type="text" value="Заголовок">
+                    <input type="text" value="Описание">
+                    <input type="time">
+                    <input type="date">
+                    <input type="text" value="Тип задачи">
+                </form>
+
+                <button class="btn_popup">Добавить</button> -->
+
+                <a href="#" class="close-popup">&times;</a>
+
+               
+
+                <form class="create_form">
+                    <h1>Добавить</h1>
+                    
+                    <input class="name" type="text" value="Заголовок">
+                    <input class="email" type="text" value="Описание">
+                    <input class="time_type" type="time">
+                    <input class="date_type" type="date">
+                    <input class="task_type" type="text" value="Выполнено 😁" disabled>
+                    <!--  <input type="text" class="name" placeholder="Enter name">
+                    <input type="text" class="email" placeholder="Enter email"> -->
+                    <!-- <button >Create</button> -->
+                    <button class="btn_popup" type="button" onclick="add()">Добавить</button>
+                </form>
+
+                <!-- <form class="update_form">
+                    <input type="text" hidden class="id">
+                    <input type="text" class="uname">
+                    <input type="text" class="uemail">
+                    <button type="button" onclick="update()">Update</button>
+                </form> -->
+
+                <div class="add_div">
+                    <button onclick="create()">Создать Задачу</button>
+                </div>
+
+                <!-- <a href="#" class="close-popup2">&times;</a> -->
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- modal window добавления -->
+
+     <!-- <h1 class="added_h1_text">Добавления</h1> -->
+
+    <div class="form_container">
+
+        <table>
+
+            <tbody class="data_table">
+
+            </tbody>
+        </table>
+
+        <!-- <a href="#popup">
+            <button>Добавить задачу</button>
+        </a> -->
+
+    </div>
+
+    <!-- <div class="center">
+        <a href="#popup">Open Popup</a>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
